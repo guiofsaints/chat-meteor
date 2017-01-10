@@ -1,0 +1,34 @@
+<template name="header">
+    <div class="ui modal">
+        <div class="header">Online</div>
+        <div class="content">
+            <div class="ui middle aligned divided list">
+                {{#each users}}
+                    <div class="item">
+                        <i class="middle icon user"></i>
+
+                        <div class="content">
+                            <p class="header">{{name}}</p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui cancel button">Fechar</div>
+        </div>
+    </div>
+
+
+    <div class="ui top fixed menu inverted blue">
+        <div class="item header">
+            <i class="comment icon"></i> Chat
+        </div>
+        <div class="item right">
+            <a href="#" class="online ui black label">
+                <i class="icon user"></i>
+                <div class="detail">{{countUsers}}</div>
+            </a>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template name="message">
+    <div class="sixteen wide padding column">
+        <div id="list-messages" class="ui padding">
+            {{#each messages}}
+                <div class="ui segment {{myMessage id}}">
+                    <p><b>{{author}}</b> {{shortDate createdAt}}</p>
+                    <p>{{text}}</p>
+                </div>
+            {{/each}}
+        </div>
+
+        <div class="ui bottom fixed menu grid">
+            <form class="form form-message stackable sixteen column">
+                <div class="ui fluid icon input ">
+                    <input name="text" id="text" type="text" placeholder="Digite sua mensagem"/>
+                    <i class="send icon"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,28 @@
+<template name="login">
+
+    <div class="ui middle aligned stackable four column centered grid">
+        <form class="ui column form">
+            <div class="ui stacked segment">
+                <label for="username">Digite seu nome:</label>
+                <div class="field">
+                    <input type="text" name="username" id="username" placeholder="Digite seu nome"/>
+                </div>
+                <div class="field">
+                    <button type="submit" class="ui fluid blue submit button">ENTRAR</button>
+                </div>
+            </div>
+
+            {{#if error}}
+                <div class="ui negative message transition">
+                    <div class="header">
+                        Vish
+                    </div>
+                    <p>
+                        {{error}}
+                    </p>
+                </div>
+            {{/if}}
+        </form>
+    </div>
+
+</template>

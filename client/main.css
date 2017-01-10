@@ -1,0 +1,12 @@
+body {
+    background-color: #F0F0F0;
+}
+
+body > .grid {
+    height: 100%;
+}
+
+.padding {
+    padding: 15px !important;
+    padding-bottom: 70px !important;
+}
